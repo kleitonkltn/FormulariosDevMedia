@@ -33,7 +33,7 @@
 
             <div>
                 <label>Telefone:</label>
-                <input type="text" placeholder="Ex:(99) 99999-9999" name="telefone">
+                <input type="text" placeholder="Ex:(99) 99999-9999" pattern="\([0-9]\)[\s][0-9]-[0-9]" maxlength="15" name="telefone">
             </div>
 
             <div>
@@ -96,7 +96,7 @@
             </div>
 
             <div>
-                <input type="checkbox" checked  name="desejaReceberEmail">
+                <input type="checkbox" checked name="desejaReceberEmail">
                 <label>Deseja Receber ofertas por email?</label>
             </div>
         </fieldset>
