@@ -9,31 +9,31 @@
 </head>
 
 <body>
-    <form>
+    <form action="http://arquivo.devmedia.com.br/projeto/requisicao.php">
         <fieldset>
 
             <legend>Conta</legend>
             <div>
                 <label>Email:</label>
-                <input type="email">
+                <input type="email" name="email">
             </div>
 
             <div>
 
                 <label>Senha:</label>
-                <input type="password">
+                <input type="password" name="password">
             </div>
         </fieldset>
         <fieldset>
             <legend>Dados Pessoais</legend>
             <div>
                 <label>Nome:</label>
-                <input type="text" placeholder="Ex: Bruno">
+                <input type="text" placeholder="Ex: Bruno" name="nome">
             </div>
 
             <div>
                 <label>Telefone:</label>
-                <input type="text" placeholder="Ex:(99) 99999-9999">
+                <input type="text" placeholder="Ex:(99) 99999-9999" name="telefone">
             </div>
 
             <div>
@@ -46,29 +46,29 @@
 
             <div>
                 <label for="">Data de Nascimento:</label>
-                <input type="date">
+                <input type="date" name="dataNascimento">
             </div>
 
             <div>
                 <label>Foto de Perfil:</label>
-                <input type="file" accept="image/*">
+                <input type="file" accept="image/*" name="pictureProfile">
             </div>
         </fieldset>
         <fieldset>
             <legend>Endereço</legend>
             <div>
                 <label>Rua:</label>
-                <input type="text">
+                <input type="text" name="rua">
             </div>
 
             <div>
                 <label>Complemento:</label>
-                <input type="text">
+                <input type="text" name="complemento">
             </div>
 
             <div>
                 <label>Número:</label>
-                <input type="number" min="1" max="9999">
+                <input type="number" min="1" max="9999" name="numero">
             </div>
 
             <div>
@@ -78,7 +78,7 @@
 
             <div>
                 <label>Estado:</label>
-                <select>
+                <select name="estado">
                     <option value="MS">Mato Grosso do Sul</option>
                     <option value="RJ">Rio de Janeiro</option>
                     <option value="SP">São Paulo</option>
@@ -91,15 +91,17 @@
             <legend>Anúncios</legend>
             <div>
                 <label>Como Conheceu o Hello Pizza?</label>
-                <textarea maxlength="256" cols="20" rows="6"
+                <textarea maxlength="256" cols="20" rows="6" name="comoConheceu"
                     placeholder="Explique para gente como voçê conheceu nossa loja física"></textarea>
             </div>
 
             <div>
-                <input type="checkbox" checked>
+                <input type="checkbox" checked  name="desejaReceberEmail">
                 <label>Deseja Receber ofertas por email?</label>
             </div>
         </fieldset>
+
+        <input type="submit" value="Enviar">
     </form>
 </body>
 
